@@ -18,7 +18,7 @@ docker run -d -p 8080:8080 --name tc tomcat```
           (6) --name tc : 별칭(별명)을 tc로 한다
           (7) tomcat : 이미지 이름
 
-```docker ps
+docker ps
 curl localhost:8080
 docker stop tc    
 docker start tc

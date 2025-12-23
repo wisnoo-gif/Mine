@@ -4,6 +4,6 @@
 
 사용방법
 ```bash
-git clone [https://github.com/wisnoo-gif/infra-lab.git](https://github.com/wisnoo-gif/infra-lab.git)
+git clone https://github.com/wisnoo-gif/infra-lab.git
 cd infra-lab
 

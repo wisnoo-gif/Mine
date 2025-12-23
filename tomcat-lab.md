@@ -7,19 +7,19 @@ docker pull tomcat
 docker images
 ```
    
-4) 다운로드한 이미지를 실행 (instance를 만든다.)
+4) 다운로드한 이미지를 실행 (instance 만들기)
 ```
 docker run -d -p 8080:8080 --name tc tomcat
 ```
 
 ```
-docker ps
+docker ps           #도커 컨테이너 목록 출력
 
-curl localhost:8080
+curl localhost:8080 #웹서버 테스트
 
-docker stop tc
+docker stop tc      #정지
  
-docker start tc
+docker start tc     #실행
 ```
 
 4) 실행 중인 Docker instance에 연결 (terminal로 연결)```
@@ -28,7 +28,7 @@ docker exec -it tc /bin/bash```
 6) 실행중인 Docker instance를 종료```
 docker stop tc```
 
-7) 실행한 instance를 제거. (단, 실행이 아닌 상태)```  
+7) 실행한 instance를 제거. (단, 실행이 아닌 상태여야함)```  
 docker rm tc```
 
 8) 다운로드한 이미지를 삭제 (인스턴스가 없는 상태)```

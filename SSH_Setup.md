@@ -1,26 +1,36 @@
 #ssh 동작 확인 
-```netstat -antp 
+```
+netstat -antp 
 ps -ef | grep sshd
-systemctl status sshd```
+systemctl status sshd
+```
 
 
 #ssh 서버가 잘 작동하는지 확인
-```yum -y install telnet
+```
+yum -y install telnet
 telnet localhost 22
-telnet www.naver.com 80 #잘못된 응답 ```
+telnet www.naver.com 80 #잘못된 응답
+```
 
 
 #ssh 설치 
-```yum -y install openssh-server```
+```
+yum -y install openssh-server
+```
 
 
 #ssh 실행 
-```systemctl start sshd    #시작
-systemctl enable sshd   #재부팅해도 켜지게```
+```
+systemctl start sshd    #시작
+systemctl enable sshd   #재부팅해도 켜지게
+```
 
 
 #윈도우 cmd에서 Linux 접속(ip addr로 ip주소확인) 
-```ssh root@192.168.x.x```
+```
+ssh root@192.168.x.x
+```
 
 
 
